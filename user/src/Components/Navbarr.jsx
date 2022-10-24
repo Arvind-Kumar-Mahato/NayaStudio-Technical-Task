@@ -28,7 +28,7 @@ const Navbarr = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link eventKey={2}>{user && user.displayName}</Nav.Link>
+              <Nav.Link eventKey={2}>{user && user.displayName }</Nav.Link>
               <img
                 src={ user.photoURL}
                 className="rounded-circle"

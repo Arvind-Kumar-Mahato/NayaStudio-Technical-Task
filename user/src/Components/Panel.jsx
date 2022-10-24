@@ -1,5 +1,8 @@
 import React from 'react'
+
 import useCollapse from "react-collapsed";
+import Tab from './Tab';
+
 function Section(props) {
   const config = {
     defaultExpanded: props.defaultExpanded || false,
@@ -30,20 +33,17 @@ const Panel = () => {
       <Section title="SKETCHES" defaultExpanded="true">
         
         <label>
-          <input type="checkbox" /> Use dark theme
+          <Tab/>
         </label>
-        <label>
-          <input type="checkbox" /> Use internet connection to download
-          resources
-        </label>
+       
         <br />
         <br />
       </Section>
 
       <Section title="USERS">
         <label>
-          <input type="checkbox" /> Open the application when you log into the
-          computer
+          user1
+          
         </label>
         <br />
         <br />
